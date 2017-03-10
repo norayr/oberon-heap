@@ -1,0 +1,73 @@
+THRUST 0.5 von Alexander Kirchner
+
+
+Einleitung
+
+Zuerst das Wichtigste: THRUST ist frei kopierbar und kostet nichts. Das gilt ebenfalls
+für den Quellcode in Oberon (siehe unten).
+
+In THRUST steuert der Spieler ein kleines Raumschiff durch ein Höhlensystem eines
+fremden Planeten. Seine Aufgabe ist es, eine Kugel zu finden und mit zur Oberfläche
+zu bringen. Dazu muß er nahe an die Kugel heranfliegen, woraufhin sich eine Stange
+zwischen Raumschiff und Kugel materialisiert. Das System Raumschiff und Kugel verbunden
+mit einer Stange ändert natürlich die Flugeigenschaften dramatisch. Abgesehen davon gibt
+es noch ein automatisches Abwehrsystem, was den Spieler vom Kugelklau abhalten will, indem
+es sein Raumschiff zerlegt. Aus Gerechtigkeitsgründen darf der Spieler deshalb
+auch seinerseits um sich ballern.
+
+Das Spiel sollte in jeder Auflösung laufen. Da es selbst keine Farben benutzt, ist aus
+Geschwindigkeitsgründen eine Schwarz/Weiß-Auflösung vorteilhaft.
+
+
+Spiel
+
+Nach dem Starten von THRUST erscheint ein Fenster mit dem geladenen Level. Mit dem
+Menüpunkt "Los..." im Menü "Spiel" oder Control-G geht's los.
+
+Die Steuerung des Raumschiffes erfolgt mit den beiden Shift-Tasten, der Control- und
+der Alternate-Taste.
+
+Die linke Shift-Taste und die Alternate-Taste drehen das Schiff links- bzw.
+rechtsherum. Die rechte Shift-Taste gibt Schub nach Vorne. Mit der Control-Taste
+wird geballert. Alle Tasten wirken solange sie gedrückt sind. Abbrechen kann man
+das Spiel mit der Escape-Taste.
+
+Das Spiel endet, sofern nicht Escape gedrückt wird, wenn das Schiff getroffen wird
+(zumindest meistens...) oder wenn es das Level verläßt. Letzteres hoffentlich mit der
+Kugel.
+
+Am Ende wird in der Info-Zeile des Fensters die Gesamtzeit angezeigt. Mein Highscore
+mit Kugel ist knapp unter 60 Sekunden und die durchschnittliche Zeit für einen
+Bewegungszyklus auf meinem Falcon so 10-15ms.
+
+
+Level
+
+THRUST besteht zur Zeit nur aus einem Level, das in der ASCII-Datei "LEVEL1.LEV"
+beschrieben ist. Dort steht auch der Name einer GEM Image Datei (z.Z. GRAFIK1.IMG),
+die das Spielfeld enthält.
+
+Eigene Levels kann man mittels eines Editors und Malprogrammes erstellen, in dem
+diese Dateien geändert werden. Eine Beschreibung des Formts der Leveldatei findet
+sich in derselben.
+
+
+Source
+
+THRUST ist in Oberon (STJ) programmiert. Der sparsam kommentierte Quellcode
+- gute Programme sind ja bekanntlich selbstdokumentierend ;-) -  liegt bei und darf gerne
+anderweitig verwandt werden. Von allgemeinem Interesse sind die Module IMAGE
+(Laden von GEM (X)Image Dateien) und IWINVIEW (erweitert WINVIEW um Iconify etc.).
+
+
+Bekannte Fehler
+
+- Gegnerische Treffer treffen nicht immer (Fehler in der Kollisionsabfrage).
+- Beim Verbinden mit der Kugel kann man durch Wände fliegen.
+- In der 16 Bit Farbauflösung stürzt das Programm ab.
+
+
+Kontakt
+
+e-mail: kirchner@unibw-hamburg.de
+www:    http://nero.unibw-hamburg.de/~kirchner/atari

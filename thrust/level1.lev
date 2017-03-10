@@ -1,0 +1,15 @@
+(* Levedatei für THRUST 0.5
+
+   Folgende Befehle (getrennt durch SPACE oder Zeilenende) werden erkannt:
+   (*                     Kommentaranfang (verschachtelt ...)
+   *)                     Kommentarende
+   image Dateiname        Grafikdatei für das Level
+   ship x y               Startkoordinaten des Schiffes (in Bildkoordinaten)
+   ball x y               Startkoordinaten der Kugel
+   defender x y           Koordinaten des Abwehrsystems
+*)  
+image grafik1.img (* muž als erstes kommen! *)
+ship 350 50 
+ball 490 710
+defender 100 250
+defender 500 550
