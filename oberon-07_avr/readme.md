@@ -1,0 +1,21 @@
+see also oberon-07 for avr ported to Unix/Windows platforms by the use of standalone Oberon-2 compiler: https://github.com/norayr/oberon-07_avr_oo2c
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                               
